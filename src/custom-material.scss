@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+html {
+    background: linear-gradient(to right top, greenyellow, orange);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.form_name_second {
+
+    mat-label {
+        font-size: 15px;
+    }
+}
+
+.left-side {
+
+    mat-label {
+        font-size: 10px;
+        height: 10%;
+    }
+
+    mat-form-field {
+        height: 10vh;
+        margin-top: -4vh;
+    }
+}

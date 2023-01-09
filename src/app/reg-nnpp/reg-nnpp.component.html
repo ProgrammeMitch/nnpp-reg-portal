@@ -1,0 +1,98 @@
+<form action="" class="centered-content">
+    <div class="centered-content">
+      <div class="card">
+        <div class="top">
+          <div class="left">
+            <div class="passport"></div>
+          </div>
+          <div class="right">
+            <mat-card style="width: 78%">
+              <mat-card-header class="cardHeader">NNPP Registration Form</mat-card-header>
+            </mat-card>
+            <div class="form_name">
+              <mat-form-field class="input-container">
+                <mat-label>First Name</mat-label>
+                <input class="input" matInput>
+              </mat-form-field>
+            
+              <mat-form-field class="input-container">
+                <mat-label>Last Name</mat-label>
+                <input class="input" matInput>
+              </mat-form-field>
+            </div>
+            <!--convert all this to dropdown material-->
+            <div class="form_name_second">
+                <mat-form-field appearance="fill">
+                    <mat-label>Voting State</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let state of State">{{state}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>LGA</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let area of Amac">{{area}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Ward</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let number of Ward">{{number}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>P. Unit</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let unit of Polling">{{unit}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="form_rest">
+            <div class="left-side">
+                <div class="form_name_under-passport">
+                    <mat-form-field class="input-container">
+                      <mat-label>Phone Number</mat-label>
+                      <input class="input" matInput>
+                    </mat-form-field>
+                    <mat-form-field class="input-container">
+                        <mat-label>Email Address</mat-label>
+                        <input class="input" matInput>
+                      </mat-form-field>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Gendeuur</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let sex of Gender">{{sex}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </div>
+            </div>
+            <div class="right-side">
+                <div class="serial-number"></div>
+                <div class="final-area">
+                    <div class="form_name_second-last">
+                        <mat-form-field class="input-container">
+                          <mat-label>PVC Number</mat-label>
+                          <input class="input" matInput>
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                          <mat-label>Pol. Party</mat-label>
+                          <mat-select>
+                            <mat-option *ngFor="let old of Party">{{old}}</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="input-container">
+                          <mat-label>Position Held</mat-label>
+                          <input class="input" matInput>
+                        </mat-form-field>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button mat-raised-button color="primary">Register</button>
+    </div>
+  </form>
